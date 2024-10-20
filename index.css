@@ -1,0 +1,129 @@
+/* 全体のスタイル */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	color: #fff;
+	background-image: url('totemosugoi.png'); /* 背景画像の設定 */
+	background-size: cover; /* 画像をページ全体に合わせて拡大・縮小 */
+	background-position: center; /* 画像を中央に配置 */
+	background-repeat: no-repeat; /* 画像の繰り返しを無効化 */
+	background-attachment: fixed; /* ページをスクロールしても背景を固定 */
+}
+
+
+/* ヘッダーのスタイル */
+.header {
+	background-color: #333;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo img {
+	width: 60px;
+	height:auto;
+}
+
+/* ナビゲーションのスタイル */
+.navbar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+	.navbar ul li {
+		margin-right: 20px;
+	}
+
+		.navbar ul li a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 1.2em;
+		}
+
+			.navbar ul li a:hover {
+				text-decoration: underline;
+			}
+
+/* ヒーローセクションのスタイル (index.html専用) */
+.hero {
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 100px 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.hero-text h1 {
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+
+.hero-text p {
+	font-size: 1.5em;
+}
+
+/* コンテンツセクションのスタイル */
+.content {
+	padding: 40px 20px;
+	background-color: #111;
+	text-align: center;
+}
+
+	.content h2 {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	.content p {
+		font-size: 1.2em;
+		line-height: 1.6;
+	}
+
+/* YouTube動画セクションのスタイル */
+.video {
+	padding: 40px 20px;
+	background-color: #222;
+	text-align: center;
+}
+
+	.video h2 {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	/* iframeスタイル (YouTube動画) */
+	.video iframe {
+		width: 100%;
+		max-width: 560px;
+		height: 315px;
+		border: none;
+	}
+
+/* テキストの縁取りを設定 */
+.outlined-text {
+	color: white; /* 内側のテキストカラー */
+	text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */
+	-2px -2px 0 #8000ff, /* 左上に紫の影 */
+	2px -2px 0 #8000ff, /* 右上に紫の影 */
+	-2px 2px 0 #8000ff, /* 左下に紫の影 */
+	2px 2px 0 #8000ff, /* 右下に紫の影 */
+
+	1px -1px 0 #000, /* 右上に黒い影 */
+	-1px 1px 0 #000, /* 左下に黒い影 */
+	1px 1px 0 #000; /* 右下に黒い影 */
+	font-size: 2em; /* サイズは必要に応じて調整 */
+}
+
+
+/* フッターのスタイル */
+.footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 0.9em;
+}
